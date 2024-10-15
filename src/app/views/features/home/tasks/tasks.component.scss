@@ -1,0 +1,109 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px
+}
+.subheading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px
+}
+.qrcode{
+    display: flex;
+    justify-content: center;
+}
+.qrimgae{
+    height: 180px;
+    
+}
+.scanbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 90px;
+}
+.scan{
+    height: 30px;
+}
+.title-text{
+    text-align: center;
+    font-size: 15px;
+}
+.scanbtncolor{
+    background-color: #d02958;
+    color: white;
+}
+.codebtncolor{
+    background-color: #e4dddd;
+    color: black;
+}
+.languagebtn{
+    height: 34px;
+    padding: 0.2rem 3rem 0.2 1rem;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.subheading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px
+}
+.name{
+    border: 2px solid white;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.circle-text {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black; /* Border to create the circle */
+    border-radius: 50%; /* Makes it a circle */
+    text-align: center; /* Centers the text horizontally */
+    line-height: 20px; /* Centers the text vertically */
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold; /* Makes the text bold */
+  }
+  .card-custom {
+    border-radius: 8px;
+  }
+  
+  /* Styles applied when checkbox is checked */
+  .checked-card {
+    border: 1px solid #007bff; /* Blue border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .card-custom .checkbox input:checked ~ span {
+    background-color: #007bff; /* Blue checkmark */
+  }
+  .desc{
+    font-size: 14px;
+  }
+  .checkbox-class{
+    height: 18px;
+    width: 18px;
+  }
+  .date{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .text-desc{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .calendar{
+    height: 18px;
+    width: 18px;
+  }
+  
+  

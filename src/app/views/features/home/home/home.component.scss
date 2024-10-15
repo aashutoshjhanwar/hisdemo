@@ -1,0 +1,51 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px
+}
+.subheading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px
+}
+.qrcode{
+    display: flex;
+    justify-content: center;
+}
+.qrimgae{
+    height: 180px;
+    
+}
+.scanbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.scan{
+    height: 30px;
+}
+.title-text{
+    text-align: center;
+    font-size: 15px;
+}
+.scanbtncolor{
+    background-color: #d02958;
+    color: white;
+}
+.codebtncolor{
+    background-color: #e4dddd;
+    color: black;
+}
+.languagebtn{
+    height: 34px;
+    padding: 0.2rem 3rem 0.2 1rem;
+}
+#qr-reader {
+    width: 100%;        /* Full width */
+    max-width: 300px;  /* Set a maximum width */
+    height: auto;      /* Adjust height automatically */
+    margin: 0 auto;    /* Center the scanner */
+  }

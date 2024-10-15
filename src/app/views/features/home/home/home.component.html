@@ -1,0 +1,42 @@
+<h1 class="heading">Welcome to </h1>
+<h1 class="heading">INDRA IVF Clinic, Udaipur</h1>
+<div class="card mt-10 bg-light shadow-sm">
+    <div class="card-header">
+        <h3 class="card-title">Scan QR Code</h3>
+        <div class="card-toolbar">
+            <select class="form-select languagebtn" aria-label="Select example">
+                <option value="1">English</option>
+                <option value="2">Hindi</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-body card-scroll h-320px">
+        <p class="title-text">Place the QR code inside the frame and avoid the shake</p>
+        <div class="qrcode">
+            <img *ngIf="!isScannerVisible" class="qrimgae" src="./assets/media/qrcode.png" alt="">
+        </div>
+        <div class="qrcode">
+        <div *ngIf="isScannerVisible" id="qr-reader"></div>
+        <div id="qr-reader-results"></div>
+    </div>
+        <!-- <div class="mt-5 scanbtn">
+            <button type="button" class="btn btn-lg btn-danger">
+<img class="scan" src="./assets/media/customicons/scan.svg" alt="">
+            </button>
+
+        </div> -->
+        
+       
+        <div class="mt-5 scanbtn">
+            <button type="button" class="btn btn-lg scanbtncolor" (click)="startScanning()">
+            Scan
+            </button>
+            <h1 class="mt-3">or</h1>
+           
+            <button type="button" class="btn btn-lg codebtncolor">
+                Enter Code
+                </button>
+        </div>
+    </div>
+  
+</div>

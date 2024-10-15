@@ -1,0 +1,73 @@
+<h1 class="heading">Tasks </h1>
+<div>
+    <div class="name">
+<h2 class="subheading">Name: Sanskar</h2>
+<h2 class="subheading">UHID: P030824UDR0000829</h2>
+</div>
+</div>
+<div class="card mt-10 bg-light shadow-sm">
+    <div class="card-header">
+        <h3 class="card-title">Task List&nbsp; <span class="circle-text">
+            <strong>5</strong>
+          </span></h3>
+        <div class="card-toolbar">
+            <select class="form-select languagebtn" aria-label="Select example">
+                <option value="1">English</option>
+                <option value="2">Hindi</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-body card-scroll h-320px">
+       <!--begin::Input wrapper-->
+       <div class="row">
+        
+        <div class="col-md-4 mt-3" *ngFor="let card of cards">
+            <div class="card card-custom" [ngClass]="{'checked-card': card.isChecked}" (click)="toggleCheckbox(card)">
+              <div class="card-body">
+                <!-- Main Row for Appointment and Checkbox -->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- Badge Text -->
+                  <div>
+                    <div class="font-weight-bold badge badge-light-info desc">{{ card.badgeText }}</div>
+                  </div>
+          
+                  <!-- Checkbox -->
+                  <div>
+                    <label class="checkbox checkbox-lg checkbox-rounded">
+                      <input type="checkbox" class="checkbox-class" [(ngModel)]="card.isChecked">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+          
+                <!-- Follow Up or File Details -->
+                <div class="row font-weight-bold mt-5 d-flex">
+                  <div class="col-6 text-desc">{{ card.detailsText }}</div>
+                  <div class="col-6 date">
+                    <img src="./assets/media/customicons/calendar.svg" class="calendar me-2" alt="">
+                    <span class="ml-2">{{ card.date }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          
+          
+      
+   
+      </div>
+      
+        <div class="mt-5 scanbtn">
+            <button type="button" class="btn btn-lg scanbtncolor">
+            Search
+            </button>
+            <!-- <h1 class="mt-3">or</h1> -->
+           
+            <button type="button" class="btn btn-lg codebtncolor">
+                Reset
+                </button>
+        </div>
+    </div>
+  
+</div>

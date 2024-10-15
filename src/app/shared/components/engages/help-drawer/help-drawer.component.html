@@ -1,0 +1,92 @@
+<!--begin::Exolore drawer-->
+<div
+  id="kt_help"
+  class="bg-body"
+  data-kt-drawer="true"
+  data-kt-drawer-name="help"
+  data-kt-drawer-activate="true"
+  data-kt-drawer-overlay="true"
+  data-kt-drawer-width="{default:'350px', 'md': '525px'}"
+  data-kt-drawer-direction="end"
+  data-kt-drawer-toggle="#kt_help_toggle"
+  data-kt-drawer-close="#kt_help_close">
+
+  <!--begin::Card-->
+  <div class="card shadow-none rounded-0 w-100">
+    <!--begin::Header-->
+    <div class="card-header" id="kt_help_header">
+      <h5 class="card-title page-title">
+        Filter By
+      </h5>
+
+      <div class="card-toolbar">
+        <button type="button" class="btn btn-sm btn-icon explore-btn-dismiss me-n5" id="kt_help_close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+      </div>
+    </div>
+    <!--end::Header-->
+
+    <!--begin::Body-->
+    <div class="card-body" id="kt_help_body">
+      <br/>
+      <!--begin::Content-->
+      <select class="form-select px-3 py-2" aria-label="Select example">
+        <option>Last 60 days</option>
+        <option value="1">Last 45 days</option>
+        <option value="2">Last 30 days</option>
+        <option value="3">Last 15 days</option>
+    </select>
+    <br/>
+    <b>Pr no.</b>
+    <input type="number" class="form-control px-3 py-2 mt-1" />
+    <br/>
+    <b>Department</b>
+    <input type="text" class="form-control px-3 py-2 mt-1" />
+    <br/>
+
+    <h1>Menu Master Filter</h1>
+   <Div class="menu-master-filters">
+    <b>Menu Name</b>
+    <input type="text" class="form-control px-3 py-2 mt-1" />
+    <br/>
+    <b>Permission Dependency </b>
+    <input type="text" class="form-control px-3 py-2 mt-1" />
+    <br/>
+    <b>Parent Menu </b>
+    <select class="form-select px-3 py-2" aria-label="Select example">
+      <option>Menu Master</option>
+      <option value="1">Dashboard</option>
+      <option value="2">User Managment</option>
+  </select>
+    <br/>
+    <b>Application Name</b>
+    <select class="form-select px-3 py-2" aria-label="Select example">
+      <option>Admin</option>
+      <option value="1">IIVF</option>
+      <option value="2">Transportal</option>
+  </select>
+  <br/>
+  <b>Status</b>
+  <select class="form-select px-3 py-2" aria-label="Select example">
+    <option>Active</option>
+    <option value="1">Inactive</option>
+    <option value="2">All</option>
+</select>
+<br/>
+   </Div>
+  
+    <div class="button-div">
+      <a href="#" class="btn btn-sm red-button">Submit </a>
+      <a href="#" class="btn btn-sm black-button">Back</a>
+    </div>
+      <!--end::Content-->
+    </div>
+    <!--end::Body-->
+  </div>
+  <!--end::Card-->
+</div>
+<!--end::Exolore drawer-->
+

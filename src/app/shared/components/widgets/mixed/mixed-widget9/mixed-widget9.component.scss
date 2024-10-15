@@ -1,0 +1,18 @@
+.autoscroll{
+    height: 490px !important;
+    overflow-y: scroll;
+}
+.edit-icon {
+    font-size: 20px;
+    color: #000; /* You can change this to match your theme */
+    cursor: pointer;
+  }
+  
+  .position-relative {
+    position: relative; /* Ensure the card has relative positioning */
+  }
+  
+  .edit-icon:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  

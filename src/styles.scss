@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/sass/style.scss";
+@import './assets/sass/_layout.scss';
+// Replace above style with this css file to enable RTL styles
+// @import "./assets/css/style.rtl";
+@import './assets/sass/plugins.scss';
+// @import "./assets/css/style.rtl.css";
+@import "../node_modules/socicon/css/socicon.css";
+// @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+// @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../node_modules/line-awesome/dist/line-awesome/css/line-awesome.css";
+@import "../node_modules/prism-themes/themes/prism-shades-of-purple.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/animate.css/animate.css";
+@import "./assets/sass/core/vendors/plugins/prismjs";
+@import "./assets/sass/core/vendors/plugins/formvalidation";
+
+// Keenicons - High quality and pixel perfect font icons available in 3 styles, duotone, outline and solid for Metronic elements
+@import "./assets/plugins/keenicons/duotone/style.css";
+@import "./assets/plugins/keenicons/outline/style.css";
+@import "./assets/plugins/keenicons/solid/style.css";
+
+@import "@ng-select/ng-select/themes/default.theme.css";
+ 
+

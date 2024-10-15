@@ -1,0 +1,135 @@
+<div data-kt-drawer="true" data-kt-drawer-name="chat" data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
+    data-kt-drawer-width="{default:'', 'md': '500px'}" data-kt-drawer-direction="end"
+    data-kt-drawer-toggle="#filter2-toggle" data-kt-drawer-close="#kt_drawer_chat_close"
+    class="bg-body drawer drawer-end drawer-on" style="width: 425px;">
+
+    <div id="kt_drawer_chat_messenger" class="card w-100 rounded-0">
+        <div id="kt_drawer_chat_messenger_header" class="card-header pe-5">
+            <div class="card-title">
+                <div class="d-flex justify-content-center flex-column me-3">
+                    <h5 class="card-title page-title">
+                        Filter By
+                      </h5>
+                </div>
+            </div>
+            <div class="card-toolbar">
+                <div id="kt_drawer_chat_close" (click)="close()" class="btn btn-sm btn-icon">
+                    <button type="button" class="btn btn-sm btn-icon explore-btn-dismiss me-n5" id="kt_help_close">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 6L6 18M6 6L18 18" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </button>
+                    <!--container-->
+                </div>
+            </div>
+        </div>  
+        <div id="kt_chat_messenger_body" class="card-body">
+            <div class="mb-5">
+                <!--begin::Input group-->
+                
+                <div *ngIf="customFilterHere.isApplicationVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Application :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <select [(ngModel)]="customFilterHere.application" class="form-select px-3 py-2 mt-1" aria-label="Select example">
+                        <option [ngValue]="0" selected>Select Application</option>
+                        <option *ngFor="let application of applications" [ngValue]="application.id">{{ application.applicationName }}</option>
+                    </select>
+                    <!--end::Input-->
+                </div>
+                
+                <div *ngIf="customFilterHere.isRoleDrpVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Role :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <select [(ngModel)]="customFilterHere.roleDrp" class="form-select px-3 py-2 mt-1" aria-label="Select example">
+                        <option [ngValue]="0" selected>Select Role</option>
+                        <option *ngFor="let role of roles" [ngValue]="role.id">{{ role.roleName }}</option>
+                    </select>
+                    <!--end::Input-->
+                </div>
+                
+                <div *ngIf="customFilterHere.isEmailVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Email :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <input [(ngModel)]="customFilterHere.email" type="text" class="form-control form-control-sm "
+                        placeholder="" [value]="customFilterHere.email" />
+                    <!--end::Input-->
+                </div>      
+                
+                <div *ngIf="customFilterHere.isUsernameVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Username :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <input [(ngModel)]="customFilterHere.username" type="text" class="form-control form-control-sm "
+                        placeholder="" [value]="customFilterHere.username" />
+                    <!--end::Input-->
+                </div>      
+                
+                <div *ngIf="customFilterHere.isPhoneNoVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Phone No. :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <input [(ngModel)]="customFilterHere.phoneNo" type="text" class="form-control form-control-sm "
+                        placeholder="" [value]="customFilterHere.phoneNo" />
+                    <!--end::Input-->
+                </div>      
+                
+                <div *ngIf="customFilterHere.isRoleVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Role Name :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <input [(ngModel)]="customFilterHere.role" type="text" class="form-control form-control-sm "
+                        placeholder="" [value]="customFilterHere.role" />
+                    <!--end::Input-->
+                </div>      
+
+                <!--end::Input group-->
+                <!--begin::Input group-->
+                <div *ngIf="customFilterHere.isStatusVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">Status :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <select [(ngModel)]="customFilterHere.status" class="form-select px-3 py-2 mt-1" aria-label="Select example">
+                        <option [ngValue]="2" >All</option>
+                        <option [ngValue]="1" >Active</option>
+                        <option [ngValue]="0" >Not Active</option>
+                    </select>
+
+                    <!--end::Input-->
+                </div>
+
+                <div *ngIf="customFilterHere.isUserTypeVisible" class="mb-5">
+                    <!--begin::Label-->
+                    <label class="form-label fw-semibold">User Type :</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <select [(ngModel)]="customFilterHere.userType" class="form-select px-3 py-2 mt-1" aria-label="Select example">
+                        <option [ngValue]="0" >All</option>
+                        <option [ngValue]="1" >Employee</option>
+                        <option [ngValue]="2" >External</option>
+                    </select>
+
+                    <!--end::Input-->
+                </div>
+            </div>
+
+            <div class="card-footer pt-4 px-0 d-flex " id="kt_drawer_chat_messenger_footer">
+                <button (click)="filterButton(true)" type="reset"
+                    class="btn btn-sm black-button me-2"
+                    data-kt-menu-dismiss="true">Reset</button>
+                <button (click)="filterButton()" type="submit" class="btn btn-sm red-button me-0"
+                    data-kt-menu-dismiss="true">Apply</button>
+            </div>
+        </div>
+    </div>
+
+</div>

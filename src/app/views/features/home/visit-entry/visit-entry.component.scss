@@ -1,0 +1,55 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px
+}
+.subheading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px
+}
+.qrcode{
+    display: flex;
+    justify-content: center;
+}
+.qrimgae{
+    height: 180px;
+    
+}
+.scanbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.scan{
+    height: 30px;
+}
+.title-text{
+    text-align: center;
+    font-size: 15px;
+}
+.scanbtncolor{
+    background-color: #d02958;
+    color: white;
+}
+.codebtncolor{
+    background-color: #e4dddd;
+    color: black;
+}
+.languagebtn{
+    height: 34px;
+    padding: 0.2rem 3rem 0.2 1rem;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.cardio{
+    height: 24px;
+    width: 24px;
+}
